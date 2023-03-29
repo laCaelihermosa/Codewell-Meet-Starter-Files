@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+:root {
+    --gray:      #bccdd5;
+    --cyan:      #3bffd1;
+    --darkBlue:  #02394b;
+    --body-font: 'Inter', sans-serif;
+    --heading-font: 'Sen', sans-serif;
+}
+
+body {
+    font-family: var(--body-font); 
+    margin: 0;  
+    background: var(--darkBlue);
+}
+
+.main {
+    width: 375px;
+    margin: 0 auto;   
+    background: var(--darkBlue); 
+}
+
+.logo {
+    display: block;
+    margin-bottom: -50px;   
+    padding: 20px 15px; 
+}
+
+h1 {
+    color: var(--cyan);    
+    font: 700 3.1em var(--heading-font);
+    padding-left: 15px;
+    margin: -65px 0 30px;        
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    padding-left: 15px;
+    font: 400 1.37em var(--body-font);
+    margin-bottom: 35px;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+button {   
+    position: relative;   
+    z-index: 1;   
+    width: 275px;
+    height: 60px;
+    margin: 0 15px 165px;
+    font: 900 1.3em var(--heading-font);
+    border-radius: 6px;
+    border: none;    
+    color: var(--darkBlue);
+    background: var(--cyan);
+    cursor: pointer;
+}
+
+.footer {
+    display: grid;    
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;   
+    padding: 15px; 
+    gap: 12px;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.25em;
+}
+
+.img {   
+    display: block;
+}
+
+.img-6 {
+    width: 150px;
+    margin: -180px 0 0 220px;    
+    position: absolute;   
+}
+
+.img-1,
+.img-4,
+.img-5 {
+    display: none;
+}
+
+.img-2,
+.img-3 {
+    display: inline-block;
+}
+    
+.img-2 {
+    width: 140px;
+    margin-left: 225px;
+    margin-top: 75px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;    
+}
+
+.img-3 {
+    width: 95px;
+    margin: 80px 50px;   
+    position: absolute;
+}
+
+/************** @media Tablet************************/
+@media (min-width: 520px) {
+    .main {
+        width: 520px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 4.4em;
+        margin-top: -550px;
+        line-height: 100px;
+    }
+
+    p {
+        width: 350px;       
+        font-size: 1.05em;
+    }
+
+    .img-1,
+    .img-4,
+    .img-5 {
+    display: block;
+    }
+
+    .img-3 {
+        margin: 50px 20px 0 0;        
+    }
+
+    .img-2 {
+        margin: 10px 370px;                
+    }
+
+    .img-1 {
+        position: absolute;
+        width: 85px;
+        margin: 80px 0 0 420px;        
+    }
+
+    .img-5 {
+        width: 90px;
+        margin: 20px 300px 0 300px;        
+        position: absolute;
+    }
+
+    .img-4 {
+        width: 180px;
+        margin: 430px 0 0 300px;    
+    }
+
+    .img-6 {
+        position: absolute;
+        width: 100px;
+        margin: -400px 372px;              
+        
+    }
+    
+}
+
+/*******************@media Desktop***********/
+@media (min-width: 1120px) {
+    .main {
+        width: 1120px;
+        margin: 0 60px 50px;
+    }
+
+    .logo {
+        margin-bottom: -180px;
+    }
+
+    h1 {
+        width: 1200px;
+        font-size: 10em;   
+        line-height: 150px;   
+        height: 300px;
+        margin-top: -770px;
+    }
+
+    P {
+        width: 450px;
+    }
+
+    button {
+        margin-bottom: 200px;
+    }
+   
+    .img-1 {
+        margin: 150px 0 0 1070px;
+    }
+
+    .img-2 {
+        width: 150px;  
+        margin: 140px 0 0 1020px;
+     
+    }
+    
+    .img-3 {
+        width: 115px;
+        margin: 210px 0 0 -60px;        
+    }
+
+    .img-4 {
+        width: 240px;
+        margin-left: 800px;           
+    }
+
+    .img-5 {
+        margin: -110px 0 0 750px;
+    }
+
+    .img-6 {
+        position: relative;
+        width: 130px;
+        margin: -448px 0 0 650px;  
+        z-index: 2;                
+    }   
+   
+    .n {
+        position: relative;
+       z-index: 1;
+    }
+
+    .footer {
+        position: absolute;
+        margin-top: 200px;
+    }
+}
